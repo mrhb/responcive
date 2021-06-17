@@ -1,0 +1,30 @@
+    .navbar {
+        background: #748b8b;
+        direction: rtl;
+        text-align: right;
+        padding-right: 30px;
+    }
+    ul.menu  li { 
+        display: inline-block;
+        /* list-style: none; */
+     }
+     ul.menu li a {
+         display:inline-block;
+         padding: 12px;
+         /* font-size: larger; */
+         color: rgb(248, 244, 7);
+         text-decoration: none;
+        transition: all 0.2s; 
+    }
+    ul.menu > li >  a:hover{background-color: red; border-radius: 5px;}
+    ul.menu li:hover ul.submenu{
+        display:block ;
+        background-color: rgb(122, 120, 120);
+        width: 180px; 
+    }
+    ul.menu  li i{vertical-align: middle; margin-right: 5px;}
+    ul.submenu li { display: block;position: relative; border-bottom: 1px solid #fff; }
+    ul.submenu li:hover{background-color: rgb(61, 216, 47); border-radius: 5px;}
+    ul.submenu {z-index: 10; display: none; width:160px;position: absolute;top:56px}
+
+  
